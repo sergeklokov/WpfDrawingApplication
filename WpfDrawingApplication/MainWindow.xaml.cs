@@ -20,5 +20,15 @@ namespace WpfDrawingApplication
         {
             InitializeComponent();
         }
+
+        private void Button1_Click(object sender, RoutedEventArgs e)
+        {
+            InkCanvas1.Strokes.Clear();
+        }
+
+        private void Button2_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }

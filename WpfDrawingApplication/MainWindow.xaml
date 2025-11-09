@@ -5,8 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfDrawingApplication"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Ink Pad" Height="550" Width="370" Background="SaddleBrown">
     <Grid>
-
+        <InkCanvas Name="InkCanvas1" Margin="9,9,9,68" Background="LightYellow" >
+            <InkCanvas.DefaultDrawingAttributes>
+                <DrawingAttributes Color="Red"/>
+            </InkCanvas.DefaultDrawingAttributes>
+        </InkCanvas>
+        <Button Height="23" HorizontalAlignment="Left" Margin="85,0,0,24" 
+            Name="Button1" VerticalAlignment="Bottom" 
+            Width="75" Click="Button1_Click">Clear</Button>
+        <Button Height="23" HorizontalAlignment="Right" Margin="0,0,72,24" 
+            Name="Button2" VerticalAlignment="Bottom" 
+            Width="75" Click="Button2_Click">Close</Button>
     </Grid>
 </Window>
